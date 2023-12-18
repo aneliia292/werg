@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body style="background-color: #cbcbcb">
+
+<a style="text-decoration: none; margin-left: 100px; margin-top: 30px; color: black; font-size: 30px; display: flex" href="{% url 'home' %}" >Вернуться назад</a>
+<h1 style="margin-left: 850px; margin-top: 100px ">Изменить товар</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="update" style="margin-left: 850px; margin-top: 100px;" >
+            <div>
+                <p>Название товара</p>
+                <input style="border-radius: 5px; padding: 10px;" type="text" name="name" value="{{ el.name }}">
+            <div>
+            <div>
+                <p>Описание товара</p>
+                <input style="border-radius: 5px;padding: 30px" type="text" name="name" value="{{ el.name }}">
+            <div>
+            <div>
+                <p>Цена</p>
+                <input style="border-radius: 5px; padding: 10px" type="number" name="price" value="{{ el.age }}">
+            </div>
+                <button style="margin-top: 20px; margin-left: 50px; font-size: 20px; ">Refactor</button>
+        </div>
+    </form>
+</body>
+</html>
